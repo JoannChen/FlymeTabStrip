@@ -12,24 +12,24 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private val titles = arrayOf("男生", "女生")
-    private lateinit var mRecommendPageAdapter: RecommendPageAdapter
+    private lateinit var mAdapter: RecommendPageAdapter
 
     // 男频
-    val manRecommendFragment: Fragment by lazy {
-        Fragment()
+    val manFragment: FlymeFragment by lazy {
+        FlymeFragment()
     }
 
     // 女频
-    val girlRecommendFragment: Fragment by lazy {
-        Fragment()
+    val girlFragment: FlymeFragment by lazy {
+        FlymeFragment()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mRecommendPageAdapter = RecommendPageAdapter(supportFragmentManager)
-        viewPage.adapter = mRecommendPageAdapter
+        mAdapter = RecommendPageAdapter(supportFragmentManager)
+        viewPage.adapter = mAdapter
         tabStrip.setViewPager(viewPage)
 
         viewPage.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
@@ -50,9 +50,9 @@ class MainActivity : AppCompatActivity() {
         override fun getCount() = titles.size
 
         override fun getItem(position: Int): Fragment = when (position) {
-            0 -> manRecommendFragment
-            1 -> girlRecommendFragment
-            else -> manRecommendFragment
+            0 -> manFragment
+            1 -> girlFragment
+            else -> manFragment
         }
 
         override fun getItemPosition(`object`: Any): Int = PagerAdapter.POSITION_NONE

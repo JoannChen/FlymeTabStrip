@@ -1,4 +1,4 @@
-package com.joann.chen.flymetabstrip.widget;
+package com.joann.chen.flymetabstrip;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -21,8 +21,6 @@ import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.joann.chen.flymetabstrip.R;
 
 
 /**
@@ -339,7 +337,7 @@ public class FlymeTabStrip extends HorizontalScrollView {
      * 这样才能保证滚动指示器是一个长度在随着滚动偏移不断变化的样子
      */
     private float formatPercent(float percent) {
-        return Math.abs(0.5f -  Math.abs(percent - 0.5f));
+        return Math.abs(0.5f - Math.abs(percent - 0.5f));
     }
 
     /**

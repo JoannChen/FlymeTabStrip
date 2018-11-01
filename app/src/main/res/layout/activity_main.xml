@@ -14,7 +14,7 @@
         android:layout_height="40dp"
         android:background="#ffffff">
 
-        <com.joann.chen.flymetabstrip.widget.FlymeTabStrip
+        <com.joann.chen.flymetabstrip.FlymeTabStrip
             android:id="@+id/tabStrip"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
