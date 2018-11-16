@@ -1,4 +1,4 @@
-package com.joann.chen.flymetabstrip;
+package com.joann.chen.flymetabstrip.flyme;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -21,6 +21,8 @@ import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.joann.chen.flymetabstrip.R;
 
 
 /**

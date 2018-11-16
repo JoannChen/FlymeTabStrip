@@ -7,9 +7,10 @@ import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.PagerAdapter
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
+import com.joann.chen.flymetabstrip.flyme.FlymeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class FlymeActivity : AppCompatActivity() {
 
     private val titles = arrayOf("男生", "女生")
     private lateinit var mAdapter: RecommendPageAdapter

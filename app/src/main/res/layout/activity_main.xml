@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.joann.chen.flymetabstrip.MainActivity">
+    tools:context="com.joann.chen.flymetabstrip.FlymeActivity">
 
     <RelativeLayout
         android:id="@+id/title_layout"
@@ -14,7 +14,7 @@
         android:layout_height="40dp"
         android:background="#ffffff">
 
-        <com.joann.chen.flymetabstrip.FlymeTabStrip
+        <com.joann.chen.flymetabstrip.flyme.FlymeTabStrip
             android:id="@+id/tabStrip"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

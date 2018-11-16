@@ -1,10 +1,11 @@
-package com.joann.chen.flymetabstrip
+package com.joann.chen.flymetabstrip.flyme
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.joann.chen.flymetabstrip.R
 
 
 /**
